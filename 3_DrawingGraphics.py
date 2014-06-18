@@ -6,7 +6,7 @@ screen_rect = screen.get_rect()
 
 #### Game Pieces ############################
 box = pygame.Rect(10, 200, 200, 100)
-color = pygame.Color("yellow")
+box_color = pygame.Color("yellow")
 
 ##### Play Loop #############################
 running = True
@@ -28,7 +28,7 @@ while running:
     screen.fill(pygame.Color("black"))
 
     # Draw game graphics here...
-    pygame.draw.rect(screen, color, box)
+    pygame.draw.rect(screen, box_color, box)
 
     # Show the screen. This must come last.
     pygame.display.flip()
