@@ -93,7 +93,6 @@ while running:
     # Bounce ball off the paddle.
     if paddle.colliderect(ball):
         ball_dy = -ball_dy
-        ball_dx = (ball.centerx-paddle.centerx)//12
 
     # Bounce off the right edge
     if ball_dx > 0 and ball.right > game_board.right:

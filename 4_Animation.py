@@ -7,6 +7,7 @@ screen_rect = screen.get_rect()
 #### Game Pieces ############################
 box = pygame.Rect(10, 200, 200, 100)
 box_color = pygame.Color("yellow")
+box_speed = 3
 
 ##### Play Loop #############################
 running = True
@@ -22,7 +23,7 @@ while running:
         running = False
 
     ##### Game Rules ########################
-    box.centerx += 3
+    box.centerx += box_speed
 
     ##### Draw the Screen ###################
     # Start with a blank screen
